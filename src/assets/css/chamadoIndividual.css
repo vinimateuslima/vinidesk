@@ -1,0 +1,55 @@
+div#principal {
+    --bs-gutter-x: 8rem;
+    margin-top: 50px;
+}
+
+h1#tituloChamado {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.form-select{
+    width: 150px;
+    padding: 1px 15px;
+    border-color: gray;
+}
+
+select#btnImpacto {
+    color: #000000;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='gray' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    /*#E73E3E*/
+}
+
+select#btnImpacto option{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+select#btnEstado {
+    width: 150px;
+}
+
+button#btnSalvar, button#btnAcao {
+    padding: 5px 20px;
+}
+
+div#secaoUsuario, div#secaoDescricao, div#secaoResolucao {
+    margin-top: 25px;
+}
+
+textarea#lblDescricao, textarea#lblResolucao {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#formChamadoIndividual .form-control {
+    background-color: #e7e6e6;
+}
+
+#formChamadoIndividual .form-select {
+    padding: 6px 15px;
+}
+
+#formChamadoIndividual textarea {
+    height: 100px;
+}

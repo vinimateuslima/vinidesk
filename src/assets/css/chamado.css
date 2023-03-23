@@ -1,0 +1,15 @@
+section#chamado {
+    margin-top: 100px;
+}
+
+.form-control {
+    background-color: #e7e6e6;
+}
+
+.form-control, .form-select {
+    border: #787878  solid 1px;
+}
+
+textarea {
+    height: 100px;
+}

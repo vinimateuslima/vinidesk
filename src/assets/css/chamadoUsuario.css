@@ -1,0 +1,11 @@
+label#lblEstado {
+    border: solid 1px #000000;
+    padding: 1px 8px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #28a745;
+}
+
+div#secaoEstado {
+    margin-bottom: 20px;
+}

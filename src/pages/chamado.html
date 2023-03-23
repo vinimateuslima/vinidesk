@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vinidesk - Chamado</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link href="../assets/css/chamado.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../assets/img/vinidesk_logo.png"
+            alt="Logo"
+            width="300"
+            height="50"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <section id="chamado">
+      <!-- Seção-->
+
+      <div class="container">
+        <!-- Container-->
+
+        <div class="row justify-content-center">
+          <!-- Row-->
+
+          <div class="col-md-6">
+            <!-- Coluna-->
+            <form id="form-chamado" class="row g-3">
+              <div class="col-md-12">
+                <label for="iptNome" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control inputsChamado"
+                  id="iptNome"
+                  maxlength="100"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="iptTelefone" class="form-label">Telefone</label>
+                <input
+                  type="tel"
+                  class="form-control inputsChamado"
+                  id="iptTelefone"
+                  onkeyup="mascaraTelefone(event)"
+                  maxlength="15"
+                />
+              </div>
+              <div class="col-6">
+                <label for="iptDepartamento" class="form-label"
+                  >Departamento</label
+                >
+                <select id="iptDepartamento" class="form-select inputsChamado">
+                  <option value="Administração" selected>Administração</option>
+                  <option value="Informática">Informática</option>
+                  <option value="Contabilidade">Contabilidade</option>
+                  <option value="RH">RH</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="iptResumo" class="form-label"
+                  >Resumo do problema</label
+                >
+                <input
+                  type="text"
+                  class="form-control inputsChamado"
+                  id="iptResumo"
+                  maxlength="100"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="selectCategoria" class="form-label"
+                  >Categoria</label
+                >
+                <select id="selectCategoria" class="form-select">
+                  <option value="1" selected>Falha Desktop</option>
+                  <option value="2">Reset de senha</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+              </div>
+              <div class="col-md-12">
+                <label for="iptDescricao" class="form-label">Descrição</label>
+                <textarea
+                  class="form-control inputsChamado"
+                  placeholder="Estou com problemas para..."
+                  id="iptDescricao"
+                  maxlength="500"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    id="iptCondicoes"
+                    class="form-check-input inputsChamado"
+                    type="checkbox"
+                    id="gridCheck"
+                  />
+                  <label class="form-check-label" for="gridCheck">
+                    Aceito as condições de uso
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button
+                  id="btnCriarChamado"
+                  type="button"
+                  class="btn btn-primary"
+                >
+                  Criar
+                </button>
+                <a href="../index.html" class="btn btn-secondary"> Cancelar </a>
+              </div>
+            </form>
+          </div>
+          <!-- Coluna-->
+        </div>
+        <!-- Row-->
+      </div>
+      <!-- Container-->
+    </section>
+    <!-- Seção -->
+
+    <!-- Scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/cadastrarChamado.js"></script>
+    <script src="../assets/js/mascaraTelefone.js"></script>
+    <script src="../assets/js/validarCampos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

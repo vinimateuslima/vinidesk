@@ -8,7 +8,7 @@ const sequelize = new Sequelize('vinidesk', 'root', '123456', {
         underscored: true
     }
 });
-//teste 2
+//teste 3
 
 sequelize.authenticate()
     .then(() => {

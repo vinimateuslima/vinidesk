@@ -16,8 +16,9 @@ async function cadastrarChamado(req, res) {
         departamento: dados.departamento,
         resumo: dados.resumo,
         id_categoria: dados.id_categoria,
-        impacto: dados.impacto,
+        id_impacto: dados.id_impacto,
         id_estado: dados.id_estado,
+        id_grupo: dados.id_grupo,
         descricao: dados.descricao
     }).then(function (chamado) {
 

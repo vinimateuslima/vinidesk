@@ -1,8 +1,4 @@
 document.getElementById("btnSalvar").addEventListener("click", function () {
-  /*let nome = document.getElementById("iptNome");
-    let telefone = document.getElementById("iptTelefone");
-    let departamento = document.getElementById("iptDepartamento");
-    let resumo = document.getElementById("iptResumo"); */
 
   let numeroChamado = document.getElementById("numeroChamado");
   let impacto = document.getElementById("btnImpacto");
@@ -93,7 +89,7 @@ document.getElementById("btnSalvar").addEventListener("click", function () {
           Swal.fire({
             icon: "error",
             title: "Oops...",
-            text: "Erro ao cadastrar Chamado!",
+            text: "Erro ao atualizar Chamado!",
           });
         } else {
           await Swal.fire({
